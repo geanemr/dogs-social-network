@@ -10,7 +10,8 @@ const Login = () => {
   const navigate = useNavigate()
   const {login} = React.useContext(UserContext);
 
-  if(login === true) return navigate("/conta")
+  if(login === true) return navigate("/conta");
+  
   return (
     <div>
       <Routes>
