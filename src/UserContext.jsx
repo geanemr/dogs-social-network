@@ -56,6 +56,8 @@ export const UserStorage = ({ children }) => {
       const token = window.localStorage.getItem("token");
       if (token) {
         try {
+          setError(null);
+          setLogin(true);
           const { url, options } = TOKEN_VALIDATE_POST(token);
           const response = await fetch(url, options);
           if (!response.ok) throw Error("Token Inválido");
