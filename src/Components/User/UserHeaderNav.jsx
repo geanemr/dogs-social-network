@@ -6,9 +6,10 @@ import { ReactComponent as Estatisticas } from "../../Assets/estatisticas.svg";
 import { ReactComponent as AdicionarFoto } from "../../Assets/adicionar.svg";
 import { ReactComponent as Sair } from "../../Assets/sair.svg";
 import styles from "./UserHeaderNav.module.css";
+import useMedia from "../../Hooks/useMedia";
 
 const UserHeaderNav = () => {
-  const [mobile, setMobile] = React.useState(null);
+  const mobile = useMedia('(max-width: 40rem)')
   const { userLogout } = React.useContext(UserContext);
   const navigate = useNavigate();
 
@@ -17,7 +18,7 @@ const UserHeaderNav = () => {
     navigate('/login')
   }
 
-  return (
+  return ( 
     <nav className={styles.nav}>
       <NavLink to="/conta" end>
         <MinhasFotos />
