@@ -10,7 +10,7 @@ const FeedPhotosItem = ({ photo, setModalPhoto }) => {
     <li className={styles.photo} onClick={handleClick}>
       <img src={photo.src} alt={photo.title} />
       <span className={styles.visualizacao}>
-        {photo.acessos}-{photo.author}
+        {photo.acessos}
       </span>
     </li>
   );
