@@ -12,12 +12,13 @@ const LoginPasswordLost = () => {
 
   async function handleSubmit(event) {
     event.preventDefault();
-    if (login.validate) {
+    if (login.validate()) {
       const { url, options } = PASSWORD_LOST({
         login: login.value,
         url: window.location.href.replace("perdeu", "resetar"),
       });
       const { json } = await request(url, options);
+      console.log({json})
     }
   }
   return (
@@ -31,7 +32,7 @@ const LoginPasswordLost = () => {
           {loading ? (
             <Button>Enviando...</Button>
           ) : (
-            <Button>Enviar E-mail</Button>
+            <Button>Enviar e-mail</Button>
           )}
         </form>
       )}
