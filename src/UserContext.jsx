@@ -56,7 +56,7 @@ export const UserStorage = ({ children }) => {
       if (token) {
         try {
           setError(null);
-          setLogin(true);
+          setLoading(true);
           const { url, options } = TOKEN_VALIDATE_POST(token);
           const response = await fetch(url, options);
           if (!response.ok) throw Error("Token Inválido");
