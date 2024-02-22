@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./USerStatsGraphs.module.css";
 import { VictoryPie, VictoryChart, VictoryBar } from "victory";
 
-export const UserStatsGraphs = ({ data }) => {
+const UserStatsGraphs = ({ data }) => {
   const [graph, setGraph] = React.useState([]);
   const [total, setTotal] = React.useState(0);
 
@@ -44,9 +44,10 @@ export const UserStatsGraphs = ({ data }) => {
       </div>
       <div className={styles.graphItem}>
         <VictoryChart>
-            <VictoryBar alignment="start" data={graph}></VictoryBar>
+          <VictoryBar alignment="start" data={graph}></VictoryBar>
         </VictoryChart>
       </div>
     </section>
   );
 };
+export default UserStatsGraphs;
