@@ -1,8 +1,21 @@
-# React + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Dogs - Social Network
 
-Currently, two official plugins are available:
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Site desenvolvido durante o curso de React Completo, da plataforma Origamid.
+
+Trata-se de uma rede social direcionada à publicação de fotos de cães, na qual é possível a criação de uma conta, a realização do login, a visualização, publicação e exclusão de fotos, além da visualização de estatísticas das publicações.
+
+Você pode realizar o login através dos dados:
+
+<div align="center">
+
+| Usuário       | Senha         |
+| ------------- | ------------- |
+| Dog           | Dog           |
+|               |               |
+
+</div>
+
