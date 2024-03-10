@@ -14,7 +14,7 @@ Você pode realizar o login através dos dados:
 
 | Usuário       | Senha         |
 | ------------- | ------------- |
-| Dog           | Dog           |
+| dog           | dog           |
 |               |               |
 
 </div>
